@@ -1,0 +1,10 @@
+Make your change in VS Code/Notepad.
+In Powershell:
+
+git add .
+
+git commit -m "Boys Activity Planner Update"
+
+git push
+
+

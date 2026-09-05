@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Outing Planner">
+  <title>Boys Outing & Trip Planner</title>
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230f172a'/><text x='50%' y='68%' font-size='60' text-anchor='middle'>🐿️</text></svg>">
+
+  <script>
+    (function() {
+      const canvas = document.createElement('canvas');
+      canvas.width = 180; canvas.height = 180;
+      const ctx = canvas.getContext('2d');
+      ctx.fillStyle = '#0f172a'; ctx.fillRect(0, 0, 180, 180);
+      ctx.font = '80px Apple Color Emoji, Segoe UI Emoji, sans-serif';
+      ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+      ctx.fillText('🐿️', 60, 95); ctx.fillText('🐟', 120, 95);
+      const appleTouchIcon = document.createElement('link');
+      appleTouchIcon.rel = 'apple-touch-icon';
+      appleTouchIcon.href = canvas.toDataURL('image/png');
+      document.head.appendChild(appleTouchIcon);
+    })();
+  </script>
+
+  <style>
+    :root {
+      --bg-color: #0f172a; --card-bg: #1e293b; --card-border: #334155;
+      --text-main: #f8fafc; --text-muted: #94a3b8; --accent-blue: #2563eb;
+      --accent-blue-hover: #1d4ed8; --green: #10b981; --radius: 10px;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; -webkit-tap-highlight-color: transparent; }
+    body { background-color: var(--bg-color); color: var(--text-main); padding: 12px; padding-top: calc(16px + env(safe-area-inset-top)); padding-bottom: max(40px, env(safe-area-inset-bottom)); max-width: 760px; margin: 0 auto; }
+    input, select, button { font-size: 16px; -webkit-appearance: none; appearance: none; }
+    
+    .top-bar { display: flex; align-items: center; gap: 6px; margin-bottom: 12px; }
+    .trip-select { background: #090d16; color: #fff; border: 1px solid var(--card-border); padding: 10px; border-radius: var(--radius); font-weight: 700; flex: 1; min-width: 0; }
+    
+    .btn { background: var(--card-bg); color: var(--text-main); border: 1px solid var(--card-border); padding: 10px 12px; border-radius: var(--radius); font-weight: 600; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; gap: 4px; flex-shrink: 0; }
+    .btn-primary { background: var(--accent-blue); color: white; border: none; }
+    
+    .form-panel { background: var(--card-bg); border: 1px solid var(--card-border); border-radius: var(--radius); padding: 10px; margin-bottom: 16px; display: flex; flex-direction: column; gap: 8px; }
+    .form-row { display: flex; gap: 6px; }
+    .select-input, .text-input { background: #090d16; color: white; border: 1px solid var(--card-border); padding: 10px; border-radius: 6px; outline: none; }
+    .select-input { font-weight: 600; }
+    .text-input { flex: 1; }
+
+    .card-list { display: flex; flex-direction: column; gap: 8px; }
+    .card { background: var(--card-bg); border: 1px solid var(--card-border); border-left: 4px solid var(--green); border-radius: var(--radius); padding: 10px 12px; display: flex; align-items: center; gap: 10px; }
+    .card.completed { border-left-color: #475569; opacity: 0.6; }
+    .card.completed .card-title { text-decoration: line-through; }
+
+    .reorder-btns { display: flex; flex-direction: column; gap: 2px; }
+    .btn-arrow { background: none; border: none; color: var(--text-muted); font-size: 0.75rem; cursor: pointer; padding: 2px 4px; }
+
+    .card-content { flex: 1; min-width: 0; }
+    .card-title-line { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin-bottom: 2px; }
+    .card-title { font-size: 1rem; font-weight: 700; color: white; word-break: break-word; }
+    .card-notes { font-size: 0.85rem; color: var(--text-muted); font-family: monospace; word-break: break-word; }
+
+    .badge { font-size: 0.7rem; font-weight: 700; padding: 2px 6px; border-radius: 4px; text-transform: uppercase; }
+    .badge-cat { background: #090d16; color: #f97316; border: 1px solid #431407; }
+    .badge-owner-rodney { background: rgba(139, 92, 246, 0.2); color: #a78bfa; border: 1px solid #5b21b6; }
+    .badge-owner-benji { background: rgba(245, 158, 11, 0.2); color: #fbbf24; border: 1px solid #78350f; }
+    .badge-owner-both { background: rgba(16, 185, 129, 0.2); color: #34d399; border: 1px solid #064e3b; }
+
+    .card-actions { display: flex; align-items: center; gap: 6px; flex-shrink: 0; }
+    .btn-status { background: var(--green); color: #000; font-weight: 800; font-size: 0.85rem; padding: 6px 14px; border-radius: 6px; border: none; cursor: pointer; }
+    .btn-status.done { background: #334155; color: #94a3b8; }
+    .btn-icon-sm { background: none; border: none; color: var(--text-muted); cursor: pointer; padding: 4px; font-size: 1rem; }
+
+    .sync-bar { display: flex; justify-content: space-between; align-items: center; margin-top: 20px; padding-top: 12px; border-top: 1px solid var(--card-border); font-size: 0.8rem; color: var(--text-muted); }
+  </style>
+</head>
+<body>
+
+  <div class="top-bar">
+    <select id="tripSelect" class="trip-select" onchange="switchTrip(this.value)"></select>
+    <button class="btn btn-primary" onclick="addNewTrip()">+ Trip</button>
+    <button class="btn" onclick="renameCurrentTrip()">✏️</button>
+    <button class="btn" onclick="deleteCurrentTrip()">🗑️</button>
+  </div>
+
+  <div class="form-panel">
+    <div class="form-row">
+      <select id="newItemCat" class="select-input">
+        <option value="Logistics">Logistics</option>
+        <option value="Gear">Gear</option>
+        <option value="Shopping">Shopping</option>
+        <option value="Food">Food</option>
+        <option value="Safety">Safety</option>
+        <option value="General">General</option>
+      </select>
+      <select id="newItemOwner" class="select-input">
+        <option value="Unassigned">Unassigned</option>
+        <option value="Rodney">Rodney</option>
+        <option value="Benji">Benji</option>
+      </select>
+      <input type="text" id="newItemName" class="text-input" placeholder="Item / Activity Name..." autocomplete="off">
+      <button class="btn btn-primary" onclick="addNewItem()">Add</button>
+    </div>
+    <div class="form-row">
+      <input type="text" id="newItemNotes" class="text-input" placeholder="Optional address / comments..." autocomplete="off">
+    </div>
+  </div>
+
+  <div id="cardList" class="card-list"></div>
+
+  <div class="sync-bar">
+    <span id="syncStatus">GitHub Sync: Checking...</span>
+    <button class="btn" style="padding: 4px 8px; font-size: 0.75rem;" onclick="configureGitHub()">Setup Connection</button>
+  </div>
+
+  <script>
+    // GitHub API Configuration State
+    let config = JSON.parse(localStorage.getItem('gh_sync_config')) || {
+      owner: 'irvjt87',      // Your GitHub Username
+      repo: 'boys-outing',   // Your GitHub Repo Name
+      path: 'data.json',
+      token: ''
+    };
+
+    let currentSha = null;
+    let hasOfflineEdits = localStorage.getItem('gh_has_offline_edits') === 'true';
+
+    function configureGitHub() {
+      const owner = prompt('GitHub Username:', config.owner) || config.owner;
+      const repo = prompt('GitHub Repository Name:', config.repo) || config.repo;
+      const token = prompt('GitHub Fine-Grained Token:', config.token) || config.token;
+
+      config = { owner, repo, path: 'data.json', token: token.trim() };
+      localStorage.setItem('gh_sync_config', JSON.stringify(config));
+      fetchMasterData();
+    }
+
+    // Base64 helpers handling UTF-8 emojis/symbols
+    function utf8_to_b64(str) { return btoa(encodeURIComponent(str).replace(/%([0-9A-F]{2})/g, (m, p1) => String.fromCharCode('0x' + p1))); }
+    function b64_to_utf8(str) { return decodeURIComponent(Array.prototype.map.call(atob(str), c => '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2)).join('')); }
+
+    async function fetchMasterData() {
+      if (!config.token) {
+        document.getElementById('syncStatus').innerText = 'GitHub Sync: Unconfigured (Tap Setup)';
+        return;
+      }
+
+      document.getElementById('syncStatus').innerText = 'GitHub Sync: Syncing...';
+
+      try {
+        const res = await fetch(`https://api.github.com/repos/${config.owner}/${config.repo}/contents/${config.path}`, {
+          headers: { 'Authorization': `Bearer ${config.token}`, 'Accept': 'application/vnd.github.v3+json' }
+        });
+
+        if (!res.ok) throw new Error('Network error');
+
+        const data = await res.json();
+        currentSha = data.sha;
+        const remoteContent = JSON.parse(b64_to_utf8(data.content));
+
+        if (hasOfflineEdits) {
+          if (confirm("Offline edits found. Overwrite online master version with this iPad's version now?")) {
+            await pushToMaster(appData);
+          } else {
+            appData = remoteContent;
+            hasOfflineEdits = false;
+            localStorage.setItem('gh_has_offline_edits', 'false');
+            saveLocalState();
+          }
+        } else {
+          appData = remoteContent;
+          saveLocalState();
+        }
+
+        document.getElementById('syncStatus').innerText = 'GitHub Sync: Master Online';
+      } catch (e) {
+        document.getElementById('syncStatus').innerText = 'GitHub Sync: Offline Mode';
+      }
+    }
+
+    async function pushToMaster(dataToPush) {
+      if (!config.token || !navigator.onLine) {
+        hasOfflineEdits = true;
+        localStorage.setItem('gh_has_offline_edits', 'true');
+        document.getElementById('syncStatus').innerText = 'GitHub Sync: Saved Offline';
+        return;
+      }
+
+      try {
+        if (!currentSha) {
+          const res = await fetch(`https://api.github.com/repos/${config.owner}/${config.repo}/contents/${config.path}`, {
+            headers: { 'Authorization': `Bearer ${config.token}` }
+          });
+          if (res.ok) {
+            const fileData = await res.json();
+            currentSha = fileData.sha;
+          }
+        }
+
+        const jsonStr = JSON.stringify(dataToPush, null, 2);
+        const payload = {
+          message: 'Outing List Auto-Update',
+          content: utf8_to_b64(jsonStr),
+          sha: currentSha
+        };
+
+        const pushRes = await fetch(`https://api.github.com/repos/${config.owner}/${config.repo}/contents/${config.path}`, {
+          method: 'PUT',
+          headers: { 'Authorization': `Bearer ${config.token}`, 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        });
+
+        if (!pushRes.ok) throw new Error('Push rejected');
+
+        const pushData = await pushRes.json();
+        currentSha = pushData.content.sha;
+        hasOfflineEdits = false;
+        localStorage.setItem('gh_has_offline_edits', 'false');
+        document.getElementById('syncStatus').innerText = 'GitHub Sync: Master Online';
+      } catch (e) {
+        hasOfflineEdits = true;
+        localStorage.setItem('gh_has_offline_edits', 'true');
+        document.getElementById('syncStatus').innerText = 'GitHub Sync: Offline Edits Pending';
+      }
+    }
+
+    let appData = JSON.parse(localStorage.getItem('boys_outing_app_data_v1')) || { activeTripId: '1', trips: [] };
+
+    function saveLocalState() {
+      localStorage.setItem('boys_outing_app_data_v1', JSON.stringify(appData));
+      render();
+    }
+
+    function saveAndSync() {
+      saveLocalState();
+      pushToMaster(appData);
+    }
+
+    function getActiveTrip() {
+      return appData.trips.find(t => t.id === appData.activeTripId) || appData.trips[0] || { items: [] };
+    }
+
+    function switchTrip(id) {
+      appData.activeTripId = id;
+      saveLocalState();
+    }
+
+    function addNewTrip() {
+      const name = prompt('Enter New Trip or Activity Name:');
+      if (!name || !name.trim()) return;
+
+      const newTrip = { id: Date.now().toString(), name: name.trim(), updatedAt: Date.now(), items: [] };
+      appData.trips.push(newTrip);
+      appData.activeTripId = newTrip.id;
+      saveAndSync();
+    }
+
+    function renameCurrentTrip() {
+      const trip = getActiveTrip();
+      const newName = prompt('Rename Activity / Trip:', trip.name);
+      if (newName && newName.trim()) {
+        trip.name = newName.trim();
+        saveAndSync();
+      }
+    }
+
+    function deleteCurrentTrip() {
+      if (appData.trips.length <= 1) { alert('You must keep at least one trip.'); return; }
+      const trip = getActiveTrip();
+      if (confirm(`Delete entire "${trip.name}" outing plan?`)) {
+        appData.trips = appData.trips.filter(t => t.id !== trip.id);
+        appData.activeTripId = appData.trips[0].id;
+        saveAndSync();
+      }
+    }
+
+    function addNewItem() {
+      const activeTrip = getActiveTrip();
+      const nameInput = document.getElementById('newItemName');
+      const notesInput = document.getElementById('newItemNotes');
+      const catInput = document.getElementById('newItemCat');
+      const ownerInput = document.getElementById('newItemOwner');
+
+      const name = nameInput.value.trim();
+      if (!name) return;
+
+      activeTrip.items.push({
+        id: Date.now().toString(),
+        order: activeTrip.items.length + 1,
+        category: catInput.value,
+        owner: ownerInput.value,
+        name: name,
+        notes: notesInput.value.trim(),
+        status: 'pending',
+        updatedAt: Date.now()
+      });
+
+      nameInput.value = ''; notesInput.value = '';
+      saveAndSync();
+    }
+
+    function toggleStatus(id) {
+      const item = getActiveTrip().items.find(i => i.id === id);
+      if (item) {
+        item.status = (item.status === 'pending') ? 'done' : 'pending';
+        item.updatedAt = Date.now();
+        saveAndSync();
+      }
+    }
+
+    function moveItem(index, direction) {
+      const trip = getActiveTrip();
+      const targetIndex = index + direction;
+      if (targetIndex < 0 || targetIndex >= trip.items.length) return;
+
+      const temp = trip.items[index];
+      trip.items[index] = trip.items[targetIndex];
+      trip.items[targetIndex] = temp;
+
+      trip.items.forEach((item, idx) => { item.order = idx + 1; item.updatedAt = Date.now(); });
+      saveAndSync();
+    }
+
+    function editItem(id) {
+      const item = getActiveTrip().items.find(i => i.id === id);
+      if (!item) return;
+
+      const newName = prompt('Edit Name:', item.name); if (newName === null) return;
+      const newNotes = prompt('Edit Notes:', item.notes || ''); if (newNotes === null) return;
+      const newOwner = prompt('Assign Owner (Rodney, Benji, Unassigned):', item.owner); if (newOwner === null) return;
+
+      item.name = newName.trim() || item.name;
+      item.notes = newNotes.trim();
+      if (['Rodney', 'Benji', 'Unassigned'].includes(newOwner.trim())) item.owner = newOwner.trim();
+      item.updatedAt = Date.now();
+      saveAndSync();
+    }
+
+    function deleteItem(id) {
+      const trip = getActiveTrip();
+      const item = trip.items.find(i => i.id === id);
+      if (confirm(`Delete "${item ? item.name : 'this item'}" permanently?`)) {
+        trip.items = trip.items.filter(i => i.id !== id);
+        saveAndSync();
+      }
+    }
+
+    function render() {
+      const activeTrip = getActiveTrip();
+      const tripSelect = document.getElementById('tripSelect');
+      tripSelect.innerHTML = appData.trips.map(t => `<option value="${t.id}" ${t.id === activeTrip.id ? 'selected' : ''}>${t.name}</option>`).join('');
+
+      const items = [...(activeTrip.items || [])].sort((a, b) => (a.order || 0) - (b.order || 0));
+      const cardList = document.getElementById('cardList');
+
+      if (items.length === 0) {
+        cardList.innerHTML = '<div style="color: var(--text-muted); text-align: center; padding: 20px;">No items added to this outing yet.</div>';
+        return;
+      }
+
+      cardList.innerHTML = items.map((item, index) => {
+        let ownerBadgeClass = 'badge-owner-both';
+        if (item.owner === 'Rodney') ownerBadgeClass = 'badge-owner-rodney';
+        if (item.owner === 'Benji') ownerBadgeClass = 'badge-owner-benji';
+
+        return `
+          <div class="card ${item.status === 'done' ? 'completed' : ''}">
+            <div class="reorder-btns">
+              <button class="btn-arrow" onclick="moveItem(${index}, -1)" ${index === 0 ? 'disabled style="opacity:0.2"' : ''}>▲</button>
+              <button class="btn-arrow" onclick="moveItem(${index}, 1)" ${index === items.length - 1 ? 'disabled style="opacity:0.2"' : ''}>▼</button>
+            </div>
+            <div class="card-content">
+              <div class="card-title-line">
+                <span class="card-title">${item.name}</span>
+                <span class="badge badge-cat">${item.category}</span>
+                <span class="badge ${ownerBadgeClass}">${item.owner}</span>
+              </div>
+              ${item.notes ? `<div class="card-notes">${item.notes}</div>` : ''}
+            </div>
+            <div class="card-actions">
+              <button class="btn-status ${item.status === 'done' ? 'done' : ''}" onclick="toggleStatus('${item.id}')">
+                ${item.status === 'done' ? 'DONE' : 'PACK'}
+              </button>
+              <button class="btn-icon-sm" onclick="editItem('${item.id}')">✏️</button>
+              <button class="btn-icon-sm" onclick="deleteItem('${item.id}')">🗑️</button>
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    window.addEventListener('online', fetchMasterData);
+    if (!config.token) configureGitHub(); else fetchMasterData();
+    render();
+  </script>
+</body>
+</html>
