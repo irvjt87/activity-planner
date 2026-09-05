@@ -1,14 +1,38 @@
 {
-  "activeTripId": "1",
+  "activeTripId": "1788642564967",
   "trips": [
     {
       "id": "1",
       "name": "Squirrel Hunt One-Saline Valley CA",
       "updatedAt": 1788642000000,
       "items": [
-        { "id": "101", "order": 1, "category": "Logistics", "owner": "Rodney", "name": "Saline Valley Conservation Area", "notes": "38.254481, -92.439415", "status": "pending", "updatedAt": 1788642000000 },
-        { "id": "102", "order": 2, "category": "Gear", "owner": "Benji", "name": "Shotguns, .22 or pellet gun", "notes": "Choose guns, check if we have ammo", "status": "pending", "updatedAt": 1788642000000 }
+        {
+          "id": "101",
+          "order": 1,
+          "category": "Logistics",
+          "owner": "Rodney",
+          "name": "Saline Valley Conservation Area",
+          "notes": "38.254481, -92.439415",
+          "status": "pending",
+          "updatedAt": 1788642000000
+        },
+        {
+          "id": "102",
+          "order": 2,
+          "category": "Gear",
+          "owner": "Benji",
+          "name": "Shotguns, .22 or pellet gun",
+          "notes": "Choose guns, check if we have ammo",
+          "status": "pending",
+          "updatedAt": 1788642000000
+        }
       ]
+    },
+    {
+      "id": "1788642564967",
+      "name": "Scrivner Road CA",
+      "updatedAt": 1788642564967,
+      "items": []
     }
   ]
 }
