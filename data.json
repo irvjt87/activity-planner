@@ -34,24 +34,24 @@
       "updatedAt": 1788642564967,
       "items": [
         {
-          "id": "1788646058197",
-          "order": 1,
-          "category": "Food",
-          "owner": "Benji",
-          "name": "jerky",
-          "notes": "",
-          "status": "pending",
-          "updatedAt": 1788646061045
-        },
-        {
           "id": "1788642587509",
-          "order": 2,
+          "order": 1,
           "category": "General",
           "owner": "Unassigned",
           "name": "Plan Scrivner Road Outing",
           "notes": "",
           "status": "pending",
-          "updatedAt": 1788646061045
+          "updatedAt": 1788646062107
+        },
+        {
+          "id": "1788646058197",
+          "order": 2,
+          "category": "Food",
+          "owner": "Benji",
+          "name": "jerky",
+          "notes": "",
+          "status": "pending",
+          "updatedAt": 1788646062107
         }
       ]
     }
