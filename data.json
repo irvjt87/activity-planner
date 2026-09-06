@@ -1,5 +1,5 @@
 {
-  "activeTripId": "1788642564967",
+  "activeTripId": "1788729021880",
   "trips": [
     {
       "id": "1",
@@ -54,6 +54,12 @@
           "updatedAt": 1788646084297
         }
       ]
+    },
+    {
+      "id": "1788729021880",
+      "name": "Shooting Range",
+      "updatedAt": 1788729021881,
+      "items": []
     }
   ]
 }
