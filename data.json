@@ -59,7 +59,18 @@
       "id": "1788729021880",
       "name": "Shooting Range",
       "updatedAt": 1788729021881,
-      "items": []
+      "items": [
+        {
+          "id": "1788729052344",
+          "order": 1,
+          "category": "General",
+          "owner": "Unassigned",
+          "name": "Plan when to go to the shooting range",
+          "notes": "",
+          "status": "pending",
+          "updatedAt": 1788729052344
+        }
+      ]
     }
   ]
 }
