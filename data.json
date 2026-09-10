@@ -1,5 +1,5 @@
 {
-  "activeTripId": "1788729021880",
+  "activeTripId": "1789008403492",
   "trips": [
     {
       "id": "1",
@@ -71,6 +71,12 @@
           "updatedAt": 1788729052344
         }
       ]
+    },
+    {
+      "id": "1789008403492",
+      "name": "MO Salt Springs",
+      "updatedAt": 1789008403492,
+      "items": []
     }
   ]
 }
