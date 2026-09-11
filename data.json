@@ -1,5 +1,5 @@
 {
-  "activeTripId": "1789008403492",
+  "activeTripId": "1789168686466",
   "trips": [
     {
       "id": "1",
@@ -88,6 +88,12 @@
           "updatedAt": 1789008484512
         }
       ]
+    },
+    {
+      "id": "1789168686466",
+      "name": "Lake Airshow",
+      "updatedAt": 1789168686466,
+      "items": []
     }
   ]
 }
