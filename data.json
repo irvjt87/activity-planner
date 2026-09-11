@@ -113,6 +113,16 @@
           "notes": "Claim lawn chair spots by 09:30",
           "status": "pending",
           "updatedAt": 1789169400609
+        },
+        {
+          "id": "1789169448817",
+          "order": 3,
+          "category": "General",
+          "owner": "Unassigned",
+          "name": "Look at Spooky and B-25 before 10:00",
+          "notes": "",
+          "status": "pending",
+          "updatedAt": 1789169448817
         }
       ]
     }
