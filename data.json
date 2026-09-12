@@ -103,6 +103,16 @@
           "notes": "Nov6 School Mtg",
           "status": "pending",
           "updatedAt": 1789252536353
+        },
+        {
+          "id": "1789252581162",
+          "order": 2,
+          "category": "Logistics",
+          "owner": "Unassigned",
+          "name": "20261125",
+          "notes": "Nov25-30 Thanksgiving",
+          "status": "pending",
+          "updatedAt": 1789252581162
         }
       ]
     }
