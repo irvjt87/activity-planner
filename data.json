@@ -113,6 +113,16 @@
           "notes": "Nov25-30 Thanksgiving",
           "status": "pending",
           "updatedAt": 1789252581162
+        },
+        {
+          "id": "1789252619789",
+          "order": 3,
+          "category": "Logistics",
+          "owner": "Unassigned",
+          "name": "20261224",
+          "notes": "Dec24-Jan1 Christmas",
+          "status": "pending",
+          "updatedAt": 1789252619789
         }
       ]
     }
