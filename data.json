@@ -1,5 +1,5 @@
 {
-  "activeTripId": "1789168686466",
+  "activeTripId": "1",
   "trips": [
     {
       "id": "1",
@@ -86,53 +86,6 @@
           "notes": "Plan trip to check out Lewis B Miller salt springs",
           "status": "pending",
           "updatedAt": 1789008484512
-        }
-      ]
-    },
-    {
-      "id": "1789168686466",
-      "name": "Lake Airshow",
-      "updatedAt": 1789168686466,
-      "items": [
-        {
-          "id": "1789169328020",
-          "order": 1,
-          "category": "Logistics",
-          "owner": "Unassigned",
-          "name": "Address - Arrive by 09:00",
-          "notes": "37.976597, -92.695152",
-          "status": "pending",
-          "updatedAt": 1789169359845
-        },
-        {
-          "id": "1789169343431",
-          "order": 2,
-          "category": "Logistics",
-          "owner": "Unassigned",
-          "name": "Parking Fee $10",
-          "notes": "Claim lawn chair spots by 09:30",
-          "status": "pending",
-          "updatedAt": 1789169400609
-        },
-        {
-          "id": "1789169448817",
-          "order": 3,
-          "category": "General",
-          "owner": "Unassigned",
-          "name": "Look at Spooky and B-25 before 10:00",
-          "notes": "",
-          "status": "pending",
-          "updatedAt": 1789169448817
-        },
-        {
-          "id": "1789169470845",
-          "order": 4,
-          "category": "General",
-          "owner": "Unassigned",
-          "name": "Opening 10:20; Start Time 11:00",
-          "notes": "Closes 15:30",
-          "status": "pending",
-          "updatedAt": 1789169494711
         }
       ]
     }
