@@ -1,5 +1,5 @@
 {
-  "activeTripId": "1",
+  "activeTripId": "1789252456238",
   "trips": [
     {
       "id": "1",
@@ -88,6 +88,12 @@
           "updatedAt": 1789008484512
         }
       ]
+    },
+    {
+      "id": "1789252456238",
+      "name": "School Days Off",
+      "updatedAt": 1789252456238,
+      "items": []
     }
   ]
 }
