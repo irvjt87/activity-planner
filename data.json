@@ -143,6 +143,16 @@
           "notes": "Feb12 Teacher Visitation",
           "status": "pending",
           "updatedAt": 1789252697846
+        },
+        {
+          "id": "1789252726525",
+          "order": 6,
+          "category": "Logistics",
+          "owner": "Unassigned",
+          "name": "20270326",
+          "notes": "Mar26-Good Friday",
+          "status": "pending",
+          "updatedAt": 1789252726525
         }
       ]
     }
