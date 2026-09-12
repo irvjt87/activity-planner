@@ -153,6 +153,16 @@
           "notes": "Mar26-Good Friday",
           "status": "pending",
           "updatedAt": 1789252726525
+        },
+        {
+          "id": "1789252761213",
+          "order": 7,
+          "category": "Logistics",
+          "owner": "Unassigned",
+          "name": "20270506",
+          "notes": "May6 Ascension Day",
+          "status": "pending",
+          "updatedAt": 1789252761213
         }
       ]
     }
