@@ -93,7 +93,18 @@
       "id": "1789252456238",
       "name": "School Days Off",
       "updatedAt": 1789252456238,
-      "items": []
+      "items": [
+        {
+          "id": "1789252536353",
+          "order": 1,
+          "category": "Logistics",
+          "owner": "Unassigned",
+          "name": "20261106",
+          "notes": "Nov6 School Mtg",
+          "status": "pending",
+          "updatedAt": 1789252536353
+        }
+      ]
     }
   ]
 }
