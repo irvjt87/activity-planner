@@ -1,5 +1,5 @@
 {
-  "activeTripId": "1789252456238",
+  "activeTripId": "1789333178661",
   "trips": [
     {
       "id": "1",
@@ -165,6 +165,12 @@
           "updatedAt": 1789252761213
         }
       ]
+    },
+    {
+      "id": "1789333178661",
+      "name": "Big Buffalo CA",
+      "updatedAt": 1789333178661,
+      "items": []
     }
   ]
 }
