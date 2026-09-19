@@ -1,5 +1,5 @@
 {
-  "activeTripId": "1789333178661",
+  "activeTripId": "1789008403492",
   "trips": [
     {
       "id": "1",
@@ -82,10 +82,10 @@
           "order": 1,
           "category": "General",
           "owner": "Unassigned",
-          "name": "Are salt springs available?",
+          "name": "Go to salt springs area. Squirrel Hunt? Bring gallon of water to boil down",
           "notes": "Plan trip to check out Lewis B Miller salt springs",
           "status": "pending",
-          "updatedAt": 1789008484512
+          "updatedAt": 1789862179772
         }
       ]
     },
