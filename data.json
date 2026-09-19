@@ -1,5 +1,5 @@
 {
-  "activeTripId": "1788729021880",
+  "activeTripId": "1789333178661",
   "trips": [
     {
       "id": "1",
@@ -170,7 +170,18 @@
       "id": "1789333178661",
       "name": "Big Buffalo CA",
       "updatedAt": 1789333178661,
-      "items": []
+      "items": [
+        {
+          "id": "1789862246395",
+          "order": 1,
+          "category": "Logistics",
+          "owner": "Unassigned",
+          "name": "Hunt squirrels, deer?",
+          "notes": "",
+          "status": "pending",
+          "updatedAt": 1789862246395
+        }
+      ]
     }
   ]
 }
