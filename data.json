@@ -1,5 +1,5 @@
 {
-  "activeTripId": "1789008403492",
+  "activeTripId": "1788729021880",
   "trips": [
     {
       "id": "1",
@@ -65,10 +65,10 @@
           "order": 1,
           "category": "General",
           "owner": "Unassigned",
-          "name": "Plan when to go to the shooting range",
+          "name": "Plan: When to go to Ozark Outfitters range",
           "notes": "",
           "status": "pending",
-          "updatedAt": 1788729052344
+          "updatedAt": 1789862213412
         }
       ]
     },
