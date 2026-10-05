@@ -1,5 +1,5 @@
 {
-  "activeTripId": "1791235765884",
+  "activeTripId": "1791237762319",
   "trips": [
     {
       "id": "1",
@@ -187,6 +187,12 @@
       "id": "1791235765884",
       "name": "big buffalo creek",
       "updatedAt": 1791235765884,
+      "items": []
+    },
+    {
+      "id": "1791237762319",
+      "name": "manito lake",
+      "updatedAt": 1791237762319,
       "items": []
     }
   ]
