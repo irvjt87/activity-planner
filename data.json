@@ -1,5 +1,5 @@
 {
-  "activeTripId": "1789333178661",
+  "activeTripId": "1791235765884",
   "trips": [
     {
       "id": "1",
@@ -182,6 +182,12 @@
           "updatedAt": 1789862246395
         }
       ]
+    },
+    {
+      "id": "1791235765884",
+      "name": "big buffalo creek",
+      "updatedAt": 1791235765884,
+      "items": []
     }
   ]
 }
