@@ -209,6 +209,16 @@
           "notes": "38.855548, -92.436487",
           "status": "pending",
           "updatedAt": 1791423341787
+        },
+        {
+          "id": "1791423381726",
+          "order": 2,
+          "category": "Logistics",
+          "owner": "Unassigned",
+          "name": "2 2nd Park Spot",
+          "notes": "38.834418, -92.420981",
+          "status": "pending",
+          "updatedAt": 1791423381726
         }
       ]
     }
