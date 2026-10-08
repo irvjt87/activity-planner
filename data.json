@@ -1,5 +1,5 @@
 {
-  "activeTripId": "1791237762319",
+  "activeTripId": "1791423235920",
   "trips": [
     {
       "id": "1",
@@ -193,6 +193,12 @@
       "id": "1791237762319",
       "name": "manito lake",
       "updatedAt": 1791237762319,
+      "items": []
+    },
+    {
+      "id": "1791423235920",
+      "name": "Eagle Bluffs CA",
+      "updatedAt": 1791423235920,
       "items": []
     }
   ]
