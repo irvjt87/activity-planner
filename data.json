@@ -219,6 +219,16 @@
           "notes": "38.834418, -92.420981",
           "status": "pending",
           "updatedAt": 1791423381726
+        },
+        {
+          "id": "1791423407881",
+          "order": 3,
+          "category": "Logistics",
+          "owner": "Unassigned",
+          "name": "3 3rd Park Spot",
+          "notes": "38.831266, -92.428187",
+          "status": "pending",
+          "updatedAt": 1791423407881
         }
       ]
     }
