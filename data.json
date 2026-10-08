@@ -239,6 +239,16 @@
           "notes": "",
           "status": "pending",
           "updatedAt": 1791423527815
+        },
+        {
+          "id": "1791423612855",
+          "order": 5,
+          "category": "Logistics",
+          "owner": "Unassigned",
+          "name": "5 Binder Lake Parking",
+          "notes": "38.597070, -92.311595",
+          "status": "pending",
+          "updatedAt": 1791423612855
         }
       ]
     }
