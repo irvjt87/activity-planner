@@ -199,7 +199,18 @@
       "id": "1791423235920",
       "name": "Eagle Bluffs CA",
       "updatedAt": 1791423235920,
-      "items": []
+      "items": [
+        {
+          "id": "1791423341787",
+          "order": 1,
+          "category": "Logistics",
+          "owner": "Unassigned",
+          "name": "1 Park Here",
+          "notes": "38.855548, -92.436487",
+          "status": "pending",
+          "updatedAt": 1791423341787
+        }
+      ]
     }
   ]
 }
