@@ -1,5 +1,5 @@
 {
-  "activeTripId": "1",
+  "activeTripId": "1791423235920",
   "trips": [
     {
       "id": "1",
@@ -195,7 +195,7 @@
           "name": "2 2nd Park Spot",
           "notes": "38.834418, -92.420981",
           "status": "pending",
-          "updatedAt": 1791423381726
+          "updatedAt": 1791634004025
         },
         {
           "id": "1791423407881",
