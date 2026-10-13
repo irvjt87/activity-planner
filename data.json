@@ -1,5 +1,5 @@
 {
-  "activeTripId": "1791423235920",
+  "activeTripId": "1791855306922",
   "trips": [
     {
       "id": "1",
@@ -228,6 +228,12 @@
           "updatedAt": 1791423612855
         }
       ]
+    },
+    {
+      "id": "1791855306922",
+      "name": "Swan Lake Refuge",
+      "updatedAt": 1791855306922,
+      "items": []
     }
   ]
 }
