@@ -233,7 +233,18 @@
       "id": "1791855306922",
       "name": "Swan Lake Refuge",
       "updatedAt": 1791855306922,
-      "items": []
+      "items": [
+        {
+          "id": "1791855319316",
+          "order": 1,
+          "category": "Gear",
+          "owner": "Unassigned",
+          "name": "Phone charger",
+          "notes": "",
+          "status": "pending",
+          "updatedAt": 1791855319316
+        }
+      ]
     }
   ]
 }
