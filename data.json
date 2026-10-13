@@ -293,6 +293,16 @@
           "notes": "39°36'49.1\"N 93°13'53.9\"W",
           "status": "pending",
           "updatedAt": 1791856207936
+        },
+        {
+          "id": "1791856294691",
+          "order": 7,
+          "category": "Logistics",
+          "owner": "Unassigned",
+          "name": "5 turn right onto gravel road",
+          "notes": "39°36'49.1\"N 93°13'53.9\"W",
+          "status": "pending",
+          "updatedAt": 1791856294691
         }
       ]
     }
