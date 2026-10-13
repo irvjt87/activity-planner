@@ -253,6 +253,16 @@
           "notes": "",
           "status": "pending",
           "updatedAt": 1791855331587
+        },
+        {
+          "id": "1791855631294",
+          "order": 3,
+          "category": "Logistics",
+          "owner": "Unassigned",
+          "name": "1 Silver Lake Start Point",
+          "notes": "39.626970, -93.182795",
+          "status": "pending",
+          "updatedAt": 1791855631294
         }
       ]
     }
