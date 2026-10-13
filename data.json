@@ -273,6 +273,16 @@
           "notes": "39°35'39.5\"N 93°11'16.5\"W",
           "status": "pending",
           "updatedAt": 1791855974877
+        },
+        {
+          "id": "1791856097856",
+          "order": 5,
+          "category": "Logistics",
+          "owner": "Unassigned",
+          "name": "3 scan for shorebirds",
+          "notes": "39°36'56.7\"N 93°12'16.0\"W",
+          "status": "pending",
+          "updatedAt": 1791856097856
         }
       ]
     }
