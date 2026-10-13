@@ -303,6 +303,16 @@
           "notes": "39°36'49.1\"N 93°13'53.9\"W",
           "status": "pending",
           "updatedAt": 1791856294691
+        },
+        {
+          "id": "1791856380486",
+          "order": 8,
+          "category": "Logistics",
+          "owner": "Unassigned",
+          "name": "6 park here-walk to lake",
+          "notes": "39°37'58.4\"N 93°13'57.1\"W",
+          "status": "pending",
+          "updatedAt": 1791856380486
         }
       ]
     }
