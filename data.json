@@ -343,6 +343,16 @@
           "notes": "39°36'32.0\"N 93°07'47.8\"W",
           "status": "pending",
           "updatedAt": 1791980107679
+        },
+        {
+          "id": "1791980179112",
+          "order": 12,
+          "category": "Logistics",
+          "owner": "Unassigned",
+          "name": "10 turnaround point",
+          "notes": "39°35'27.5\"N 93°10'56.2\"W",
+          "status": "pending",
+          "updatedAt": 1791980179112
         }
       ]
     }
