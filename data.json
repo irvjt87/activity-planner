@@ -21,10 +21,10 @@
           "order": 2,
           "category": "Gear",
           "owner": "Benji",
-          "name": "Shotguns, .22 or pellet gun",
+          "name": "Shotguns and .22",
           "notes": "Choose guns, check if we have ammo",
           "status": "pending",
-          "updatedAt": 1792283154415
+          "updatedAt": 1792345308369
         }
       ]
     },
