@@ -25,6 +25,16 @@
           "notes": "Choose guns, check if we have ammo",
           "status": "pending",
           "updatedAt": 1792345308369
+        },
+        {
+          "id": "1792373490378",
+          "order": 3,
+          "category": "Logistics",
+          "owner": "Unassigned",
+          "name": "1 Parking Spot",
+          "notes": "38°17'02.6\"N 92°26'45.0\"W",
+          "status": "pending",
+          "updatedAt": 1792373490378
         }
       ]
     },
