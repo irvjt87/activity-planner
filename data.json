@@ -139,6 +139,16 @@
           "notes": "",
           "status": "pending",
           "updatedAt": 1792495424781
+        },
+        {
+          "id": "1792495565085",
+          "order": 8,
+          "category": "General",
+          "owner": "Unassigned",
+          "name": ".308 zero at 50yd, -0.40 at 25yd",
+          "notes": "",
+          "status": "pending",
+          "updatedAt": 1792495565085
         }
       ]
     },
