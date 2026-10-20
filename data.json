@@ -109,6 +109,16 @@
           "notes": "",
           "status": "pending",
           "updatedAt": 1792495350251
+        },
+        {
+          "id": "1792495376514",
+          "order": 5,
+          "category": "Gear",
+          "owner": "Unassigned",
+          "name": "Ear Plugs",
+          "notes": "",
+          "status": "pending",
+          "updatedAt": 1792495376514
         }
       ]
     },
