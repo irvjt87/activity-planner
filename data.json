@@ -99,6 +99,16 @@
           "notes": "",
           "status": "pending",
           "updatedAt": 1792495343692
+        },
+        {
+          "id": "1792495350251",
+          "order": 4,
+          "category": "Gear",
+          "owner": "Unassigned",
+          "name": ".380",
+          "notes": "",
+          "status": "pending",
+          "updatedAt": 1792495350251
         }
       ]
     },
