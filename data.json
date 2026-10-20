@@ -1,5 +1,5 @@
 {
-  "activeTripId": "1",
+  "activeTripId": "1788729021880",
   "trips": [
     {
       "id": "1",
@@ -79,6 +79,16 @@
           "notes": "",
           "status": "pending",
           "updatedAt": 1789862213412
+        },
+        {
+          "id": "1792495318960",
+          "order": 2,
+          "category": "Gear",
+          "owner": "Unassigned",
+          "name": "Both .398 rifles",
+          "notes": "",
+          "status": "pending",
+          "updatedAt": 1792495318960
         }
       ]
     },
