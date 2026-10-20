@@ -71,16 +71,6 @@
       "updatedAt": 1788729021881,
       "items": [
         {
-          "id": "1788729052344",
-          "order": 1,
-          "category": "General",
-          "owner": "Unassigned",
-          "name": "Plan: When to go to Ozark Outfitters range",
-          "notes": "",
-          "status": "pending",
-          "updatedAt": 1789862213412
-        },
-        {
           "id": "1792495318960",
           "order": 2,
           "category": "Gear",
@@ -89,6 +79,16 @@
           "notes": "",
           "status": "pending",
           "updatedAt": 1792495318960
+        },
+        {
+          "id": "1792495337053",
+          "order": 2,
+          "category": "Gear",
+          "owner": "Unassigned",
+          "name": ".22mag/20gauge",
+          "notes": "",
+          "status": "pending",
+          "updatedAt": 1792495337053
         }
       ]
     },
