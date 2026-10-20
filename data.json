@@ -129,6 +129,16 @@
           "notes": "",
           "status": "pending",
           "updatedAt": 1792495403608
+        },
+        {
+          "id": "1792495424781",
+          "order": 7,
+          "category": "Gear",
+          "owner": "Unassigned",
+          "name": "Targets, stapler, cardboard box",
+          "notes": "",
+          "status": "pending",
+          "updatedAt": 1792495424781
         }
       ]
     },
