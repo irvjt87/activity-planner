@@ -119,6 +119,16 @@
           "notes": "",
           "status": "pending",
           "updatedAt": 1792495394949
+        },
+        {
+          "id": "1792495403608",
+          "order": 6,
+          "category": "Gear",
+          "owner": "Unassigned",
+          "name": "Ammo",
+          "notes": "",
+          "status": "pending",
+          "updatedAt": 1792495403608
         }
       ]
     },
