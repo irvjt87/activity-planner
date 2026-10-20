@@ -89,6 +89,16 @@
           "notes": "",
           "status": "pending",
           "updatedAt": 1792495337053
+        },
+        {
+          "id": "1792495343692",
+          "order": 3,
+          "category": "Gear",
+          "owner": "Unassigned",
+          "name": "9mm",
+          "notes": "",
+          "status": "pending",
+          "updatedAt": 1792495343692
         }
       ]
     },
