@@ -1,5 +1,5 @@
 {
-  "activeTripId": "1788642564967",
+  "activeTripId": "1792878412649",
   "trips": [
     {
       "id": "1",
@@ -302,6 +302,12 @@
           "updatedAt": 1791423612855
         }
       ]
+    },
+    {
+      "id": "1792878412649",
+      "name": "Lamine River deer hunt",
+      "updatedAt": 1792878412649,
+      "items": []
     }
   ]
 }
