@@ -25,6 +25,16 @@
           "notes": "Squirrel hunt and scout for deer",
           "status": "pending",
           "updatedAt": 1793398082241
+        },
+        {
+          "id": "1793398137445",
+          "order": 3,
+          "category": "Logistics",
+          "owner": "Rodney",
+          "name": "Parking Spot",
+          "notes": "1st Choice Parking Spot",
+          "status": "pending",
+          "updatedAt": 1793398137445
         }
       ]
     },
