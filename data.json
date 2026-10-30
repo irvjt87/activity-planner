@@ -61,10 +61,10 @@
           "order": 6,
           "category": "Logistics",
           "owner": "Rodney",
-          "name": "Check Spot for deer blind",
+          "name": "Check Out Spot for deer blind",
           "notes": "Coordinates here",
           "status": "pending",
-          "updatedAt": 1793398254084
+          "updatedAt": 1793398268734
         }
       ]
     },
