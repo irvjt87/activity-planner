@@ -31,10 +31,10 @@
           "order": 3,
           "category": "Logistics",
           "owner": "Rodney",
-          "name": "Parking Spot 1",
+          "name": "Parking Spot",
           "notes": "38°15'25.3\"N 92°26'26.8\"W",
           "status": "pending",
-          "updatedAt": 1793710115855
+          "updatedAt": 1793710271938
         },
         {
           "id": "1793398171301",
@@ -42,9 +42,9 @@
           "category": "Logistics",
           "owner": "Rodney",
           "name": "Backup Parking Spot",
-          "notes": "2nd Choice Parking Spot",
+          "notes": "38°15'43.5\"N 92°26'00.3\"W",
           "status": "pending",
-          "updatedAt": 1793710247660
+          "updatedAt": 1793710257830
         },
         {
           "id": "1793398202307",
