@@ -43,8 +43,8 @@
           "owner": "Rodney",
           "name": "Backup Parking Spot",
           "notes": "2nd Choice Parking Spot",
-          "status": "done",
-          "updatedAt": 1793710246408
+          "status": "pending",
+          "updatedAt": 1793710247660
         },
         {
           "id": "1793398202307",
