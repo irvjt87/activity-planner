@@ -65,6 +65,16 @@
           "notes": "38°15'53.1\"N 92°26'30.7\"W",
           "status": "pending",
           "updatedAt": 1793710562343
+        },
+        {
+          "id": "1793710746757",
+          "order": 7,
+          "category": "Logistics",
+          "owner": "Unassigned",
+          "name": "Backup spot for deer blind",
+          "notes": "38°16'33.3\"N 92°26'36.4\"W",
+          "status": "pending",
+          "updatedAt": 1793710746757
         }
       ]
     },
