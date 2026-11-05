@@ -1,5 +1,5 @@
 {
-  "activeTripId": "1791423235920",
+  "activeTripId": "1",
   "trips": [
     {
       "id": "1",
@@ -70,11 +70,11 @@
           "id": "1793710746757",
           "order": 7,
           "category": "Logistics",
-          "owner": "Unassigned",
+          "owner": "Rodney",
           "name": "Backup spot for deer blind",
           "notes": "38°16'33.3\"N 92°26'36.4\"W",
           "status": "pending",
-          "updatedAt": 1793845926241
+          "updatedAt": 1793846085793
         }
       ]
     },
@@ -338,8 +338,8 @@
           "owner": "Unassigned",
           "name": "5 Binder Lake Parking",
           "notes": "38.597070, -92.311595",
-          "status": "pending",
-          "updatedAt": 1791423612855
+          "status": "done",
+          "updatedAt": 1793846032366
         }
       ]
     },
