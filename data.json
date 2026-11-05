@@ -14,7 +14,7 @@
           "name": "Saline Valley Conservation Area",
           "notes": "38.254481, -92.439415",
           "status": "pending",
-          "updatedAt": 1792345223603
+          "updatedAt": 1793846111949
         },
         {
           "id": "102",
@@ -24,7 +24,7 @@
           "name": "Shotguns for squirrels & rabbits",
           "notes": "Squirrel hunt and scout for deer",
           "status": "pending",
-          "updatedAt": 1793398082241
+          "updatedAt": 1793846111949
         },
         {
           "id": "1793398137445",
@@ -34,7 +34,7 @@
           "name": "Parking Spot",
           "notes": "38°15'25.3\"N 92°26'26.8\"W",
           "status": "pending",
-          "updatedAt": 1793710271938
+          "updatedAt": 1793846111949
         },
         {
           "id": "1793398171301",
@@ -44,7 +44,7 @@
           "name": "Backup Parking Spot",
           "notes": "38°15'43.5\"N 92°26'00.3\"W",
           "status": "pending",
-          "updatedAt": 1793710257830
+          "updatedAt": 1793846111949
         },
         {
           "id": "1793398202307",
@@ -54,27 +54,27 @@
           "name": "Backup Parking Spot",
           "notes": "38°16'37.5\"N 92°26'47.2\"W",
           "status": "pending",
-          "updatedAt": 1793710445676
-        },
-        {
-          "id": "1793398254084",
-          "order": 6,
-          "category": "Logistics",
-          "owner": "Rodney",
-          "name": "Check Out Spot for deer blind",
-          "notes": "38°15'53.1\"N 92°26'30.7\"W",
-          "status": "pending",
-          "updatedAt": 1793710562343
+          "updatedAt": 1793846111949
         },
         {
           "id": "1793710746757",
-          "order": 7,
+          "order": 6,
           "category": "Logistics",
           "owner": "Rodney",
           "name": "Backup spot for deer blind",
           "notes": "38°16'33.3\"N 92°26'36.4\"W",
           "status": "pending",
-          "updatedAt": 1793846085793
+          "updatedAt": 1793846111949
+        },
+        {
+          "id": "1793398254084",
+          "order": 7,
+          "category": "Logistics",
+          "owner": "Rodney",
+          "name": "Check Out Spot for deer blind",
+          "notes": "38°15'53.1\"N 92°26'30.7\"W",
+          "status": "pending",
+          "updatedAt": 1793846111949
         }
       ]
     },
