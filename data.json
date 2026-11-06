@@ -85,6 +85,16 @@
           "notes": "(38.2649114, -92.4370504)",
           "status": "pending",
           "updatedAt": 1793984592176
+        },
+        {
+          "id": "1793984605990",
+          "order": 9,
+          "category": "General",
+          "owner": "Unassigned",
+          "name": "Hilltop spot 1",
+          "notes": "Xxx.",
+          "status": "pending",
+          "updatedAt": 1793984605990
         }
       ]
     },
