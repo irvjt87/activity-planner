@@ -1,5 +1,5 @@
 {
-  "activeTripId": "1789252456238",
+  "activeTripId": "1",
   "trips": [
     {
       "id": "1",
@@ -92,9 +92,9 @@
           "category": "General",
           "owner": "Unassigned",
           "name": "Hilltop spot 1",
-          "notes": "Xxx.",
+          "notes": "(38.2635920, -92.4376506)",
           "status": "pending",
-          "updatedAt": 1793984605990
+          "updatedAt": 1793984635794
         }
       ]
     },
@@ -295,7 +295,7 @@
           "name": "Hilltop spot one",
           "notes": "(38.2635920, -92.4376506)",
           "status": "pending",
-          "updatedAt": 1793983926363
+          "updatedAt": 1793984619402
         }
       ]
     },
