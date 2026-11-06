@@ -1,5 +1,5 @@
 {
-  "activeTripId": "1789252456238",
+  "activeTripId": "1",
   "trips": [
     {
       "id": "1",
@@ -64,7 +64,7 @@
           "name": "Check Out Spot for deer blind",
           "notes": "38°15'53.1\"N 92°26'30.7\"W",
           "status": "pending",
-          "updatedAt": 1793846114931
+          "updatedAt": 1793984657673
         },
         {
           "id": "1793710746757",
