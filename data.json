@@ -342,23 +342,6 @@
           "updatedAt": 1793846032366
         }
       ]
-    },
-    {
-      "id": "1792878412649",
-      "name": "Lamine River deer hunt",
-      "updatedAt": 1792878412649,
-      "items": [
-        {
-          "id": "1792878556620",
-          "order": 1,
-          "category": "Logistics",
-          "owner": "Unassigned",
-          "name": "1 Parking Spot option 1",
-          "notes": "38°41'23.9\"N 92°55'40.7\"W",
-          "status": "done",
-          "updatedAt": 1792878570270
-        }
-      ]
     }
   ]
 }
