@@ -1,5 +1,5 @@
 {
-  "activeTripId": "1",
+  "activeTripId": "1789252456238",
   "trips": [
     {
       "id": "1",
@@ -296,16 +296,6 @@
           "notes": "(38.2635920, -92.4376506)",
           "status": "pending",
           "updatedAt": 1793983926363
-        },
-        {
-          "id": "1793984558007",
-          "order": 9,
-          "category": "General",
-          "owner": "Unassigned",
-          "name": "Hill spot 2",
-          "notes": "(38.2649114, -92.4370504)",
-          "status": "pending",
-          "updatedAt": 1793984558007
         }
       ]
     },
