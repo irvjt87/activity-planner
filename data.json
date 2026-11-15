@@ -1,5 +1,5 @@
 {
-  "activeTripId": "1789252456238",
+  "activeTripId": "1794709109091",
   "trips": [
     {
       "id": "1",
@@ -295,6 +295,12 @@
           "updatedAt": 1793846032366
         }
       ]
+    },
+    {
+      "id": "1794709109091",
+      "name": "Binder Park",
+      "updatedAt": 1794709109091,
+      "items": []
     }
   ]
 }
