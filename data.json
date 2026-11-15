@@ -1,5 +1,5 @@
 {
-  "activeTripId": "1",
+  "activeTripId": "1789252456238",
   "trips": [
     {
       "id": "1",
@@ -157,8 +157,8 @@
           "owner": "Unassigned",
           "name": "20261106",
           "notes": "Nov6 School Mtg",
-          "status": "done",
-          "updatedAt": 1793974163968
+          "status": "pending",
+          "updatedAt": 1794709074887
         },
         {
           "id": "1789252581162",
