@@ -350,6 +350,16 @@
           "notes": "38°35'40.6\"N 92°18'33.1\"W",
           "status": "pending",
           "updatedAt": 1794709623136
+        },
+        {
+          "id": "1794709685911",
+          "order": 6,
+          "category": "Logistics",
+          "owner": "Unassigned",
+          "name": "Scan Lake for Waterfowl",
+          "notes": "38°35'50.0\"N 92°18'26.1\"W",
+          "status": "pending",
+          "updatedAt": 1794709685911
         }
       ]
     }
