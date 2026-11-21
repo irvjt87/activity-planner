@@ -308,8 +308,8 @@
           "owner": "Unassigned",
           "name": "Arrive Here 7:15",
           "notes": "38°36'10.6\"N 92°17'52.0\"W",
-          "status": "pending",
-          "updatedAt": 1795263772528
+          "status": "done",
+          "updatedAt": 1795267874331
         },
         {
           "id": "1794709354489",
