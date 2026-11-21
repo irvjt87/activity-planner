@@ -1,5 +1,5 @@
 {
-  "activeTripId": "1794709109091",
+  "activeTripId": "1795299645565",
   "trips": [
     {
       "id": "1",
@@ -362,6 +362,12 @@
           "updatedAt": 1795271800539
         }
       ]
+    },
+    {
+      "id": "1795299645565",
+      "name": "Manito Lake",
+      "updatedAt": 1795299645565,
+      "items": []
     }
   ]
 }
