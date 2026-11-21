@@ -377,6 +377,16 @@
           "notes": "(38.5766855, -92.8043397)",
           "status": "pending",
           "updatedAt": 1795299655038
+        },
+        {
+          "id": "1795299700325",
+          "order": 2,
+          "category": "Logistics",
+          "owner": "Unassigned",
+          "name": "Other hunters approx",
+          "notes": "(38.5767867, -92.8025084)",
+          "status": "pending",
+          "updatedAt": 1795299700326
         }
       ]
     }
