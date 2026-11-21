@@ -328,8 +328,8 @@
           "owner": "Unassigned",
           "name": "Park Here",
           "notes": "38°36'11.0\"N 92°18'14.9\"W",
-          "status": "pending",
-          "updatedAt": 1795267952381
+          "status": "done",
+          "updatedAt": 1795268181147
         },
         {
           "id": "1794709543575",
