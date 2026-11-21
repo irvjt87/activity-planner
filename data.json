@@ -367,7 +367,18 @@
       "id": "1795299645565",
       "name": "Manito Lake",
       "updatedAt": 1795299645565,
-      "items": []
+      "items": [
+        {
+          "id": "1795299655038",
+          "order": 1,
+          "category": "Logistics",
+          "owner": "Unassigned",
+          "name": "Stood",
+          "notes": "(38.5766855, -92.8043397)",
+          "status": "pending",
+          "updatedAt": 1795299655038
+        }
+      ]
     }
   ]
 }
