@@ -1,5 +1,5 @@
 {
-  "activeTripId": "1795299645565",
+  "activeTripId": "1789252456238",
   "trips": [
     {
       "id": "1",
@@ -167,8 +167,8 @@
           "owner": "Unassigned",
           "name": "20261125",
           "notes": "Nov25-30 Thanksgiving",
-          "status": "pending",
-          "updatedAt": 1789252581162
+          "status": "done",
+          "updatedAt": 1795719706895
         },
         {
           "id": "1789252619789",
