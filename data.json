@@ -1,5 +1,5 @@
 {
-  "activeTripId": "1789252456238",
+  "activeTripId": "1795299645565",
   "trips": [
     {
       "id": "1",
@@ -387,6 +387,16 @@
           "notes": "(38.5767867, -92.8025084)",
           "status": "pending",
           "updatedAt": 1795299700326
+        },
+        {
+          "id": "1795830890389",
+          "order": 3,
+          "category": "Logistics",
+          "owner": "Unassigned",
+          "name": "New Spot One",
+          "notes": "(38.5704756, -92.8052919)",
+          "status": "pending",
+          "updatedAt": 1795830890389
         }
       ]
     }
